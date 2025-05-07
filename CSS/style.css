@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap');
+:root {
+    --red: #ffc54d;
+    --green: #ca352d;
+    --yellow: #FFC54D;
+    --white: whitesmoke;
+}
+
+* {
+    box-sizing: border-box;
+    direction: rtl;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Vazirmatn', sans-serif;
+    background-color: #fdfaf6;
+    color: #333;
+    line-height: 1.8;
+}
+
+
+/* ===== Landing Header Background ===== */
+
+.landing {
+    background-image: url('../media/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: var(--white);
+}
+
+
+/* ===== Header ===== */
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    row-gap: 1em;
+    padding: 1em 2em;
+    align-items: center;
+    box-sizing: border-box;
+    /* justify-content: space-between; */
+}
+
+#logo {
+    flex: 1 1 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* وسط‌چین افقی */
+    justify-content: center;
+    text-align: center;
+}
+
+.logo-img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 0.5em;
+}
+
+header h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--yellow);
+    display: flex;
+    align-items: center;
+}
+
+header h2 i {
+    margin-left: 0.5em;
+    color: var(--green);
+}
+
+nav {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--yellow);
+    font-weight: bold;
+    transition: color 0.3s;
+    min-width: 80px;
+    text-align: center;
+}
+
+nav a i {
+    margin-left: 0.4em;
+}
+
+nav a:hover {
+    color: var(--green);
+}
+
+
+/* ===== Main Text ===== */
+
+.maintext {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    padding: 1em;
+}
+
+.tagline1 {
+    color: var(--yellow);
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+
+.tagline2 {
+    color: #FF4C4C;
+}
+
+.callus {
+    color: #000;
+}
+
+
+/* .maintext div {
+    margin-top: .75em;
+} */
+
+.maintext button {
+    width: 20vw;
+    margin-top: 2em;
+    border-radius: 10px;
+    padding: .7em;
+    background-color: var(--green);
+    color: var(--white);
+    border: 1px solid var(--green);
+}
+
+
+/* ===== Menu Section ===== */
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    background: linear-gradient(to right, rgb(100, 100, 100), rgb(53, 52, 52));
+    color: var(--white);
+}
+
+#menuheading,
+#locheading {
+    background: linear-gradient(to right, rgb(100, 100, 100), rgb(53, 52, 52));
+    font-size: 2.5em;
+    color: var(--red);
+    display: flex;
+    justify-content: center;
+}
+
+.menu th {
+    color: var(--green);
+    font-size: 1.8em;
+}
+
+table {
+    width: 100%;
+    padding: 1em;
+}
+
+.menu tr {
+    display: flex;
+    justify-content: center;
+    margin-top: .8em;
+}
+
+.menu td:nth-child(1) {
+    flex: 1;
+    justify-self: left;
+}
+
+.menu td:nth-child(2) {
+    justify-self: right;
+}
+
+.maincourse {
+    grid-row: span 2;
+}
+
+
+/* نقطه‌چین بین نام غذا و قیمت */
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-item .dashed-line {
+    flex-grow: 1;
+    border-bottom: 1px dashed #808080;
+    margin: 0 0.5em;
+    height: 0;
+}
+
+
+/* ===== Locations ===== */
+
+.locations {
+    background: linear-gradient(to right, rgb(100, 100, 100), rgb(53, 52, 52));
+    color: var(--white);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.locations h2 {
+    color: var(--green);
+    margin-bottom: .8em;
+}
+
+.locations div {
+    border-radius: 10px;
+    margin: 1em;
+    padding: 1.5em;
+    box-shadow: 0 6px 15px rgba(121, 121, 121, 0.08);
+    color: var(--white);
+}
+
+
+/* ===== Footer ===== */
+
+footer {
+    background-color: rgb(55, 55, 55);
+    color: var(--white);
+    padding: .25em 1em;
+}
+
+#copyright {
+    margin-left: 20px;
+}
+
+
+/* ===== Social Media Icons ===== */
+
+.social-menu ul {
+    display: flex;
+    padding: 0;
+}
+
+.social-menu ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.social-menu ul li .fab {
+    font-size: 25px;
+    line-height: 40px;
+    transition: .3s;
+    color: #000;
+}
+
+.social-menu ul li .fab:hover {
+    color: #fff;
+}
+
+.social-menu ul li a {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, .5);
+}
+
+.instagram-credit a:hover {
+    transform: translate(0, -10%);
+}
+
+.instagram-credit li:nth-child(1) a:hover {
+    background-color: #4267B2;
+}
+
+.instagram-credit li:nth-child(2) a:hover {
+    background-color: #E4405F;
+}
+
+.instagram-credit li:nth-child(3) a:hover {
+    background-color: #00ACEE;
+}
+
+@media screen and (max-width: 768px) {
+    .menu td {
+        font-size: 0.9em;
+        white-space: nowrap;
+        /* مانع از رفتن به خط بعد */
+        /* overflow: hidden; */
+        text-overflow: ellipsis;
+    }
+    .menu-item {
+        flex-wrap: nowrap;
+    }
+}
+
+.instagram-credit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    font-size: 0.8em;
+    font-family: 'Vazirmatn', sans-serif;
+    color: #aaa;
+    gap: 0.5em;
+}
+
+.instagram-credit .instagram-icon {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+}
+
+.instagram-credit .instagram-icon:hover {
+    transform: scale(1.1);
+}
+
+.instagram-credit span {
+    font-style: italic;
+    letter-spacing: 0.3px;
+}
+
+.menu-category {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #ca352d;
+    display: flex;
+    align-items: center;
+    margin: 1em 0;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+.menu-category i {
+    font-size: 1.6em;
+    color: #ffc54d;
+}
